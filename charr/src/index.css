@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Code Quest Audit Tool - Professional Security & Performance Analysis Design System */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 220 26% 97%;
+    --foreground: 220 39% 11%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 39% 11%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 39% 11%;
+
+    /* Primary - Tech Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary - Slate */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 39% 11%;
+
+    /* Muted colors */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent - Cyan */
+    --accent: 189 94% 43%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI colors */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(220 39% 11% / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Base colors */
+    --background: 220 26% 9%;
+    --foreground: 220 14% 96%;
+
+    /* Card colors */
+    --card: 220 26% 12%;
+    --card-foreground: 220 14% 96%;
+
+    /* Popover colors */
+    --popover: 220 26% 12%;
+    --popover-foreground: 220 14% 96%;
+
+    /* Primary - Tech Blue (brighter in dark) */
+    --primary: 217 91% 65%;
+    --primary-foreground: 220 26% 9%;
+    --primary-glow: 217 91% 75%;
+
+    /* Secondary - Dark Slate */
+    --secondary: 220 26% 16%;
+    --secondary-foreground: 220 14% 96%;
+
+    /* Muted colors */
+    --muted: 220 26% 16%;
+    --muted-foreground: 220 9% 65%;
+
+    /* Accent - Bright Cyan */
+    --accent: 189 94% 50%;
+    --accent-foreground: 220 26% 9%;
+
+    /* Status colors */
+    --success: 142 76% 42%;
+    --success-foreground: 220 26% 9%;
+    --warning: 38 92% 55%;
+    --warning-foreground: 220 26% 9%;
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 220 14% 96%;
+
+    /* UI colors */
+    --border: 220 26% 20%;
+    --input: 220 26% 16%;
+    --ring: 217 91% 65%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
